@@ -1,0 +1,133 @@
+.profile
+{
+    display: flex;
+}
+.profileWrapper
+{
+    flex: 9;
+}
+.followerCount
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+
+    div
+    {
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #fafafa;
+        border-radius: 7px;
+        padding: 10px;
+        cursor: pointer;
+        p
+        {
+            margin-top: 5px;
+        }
+    }
+}
+.followButtonContainer
+{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    button 
+    {
+        height: 40px;
+        color: #fff;
+        background-color: #3d5afe;
+        border-radius: 10px;
+        width: 100px;
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+.profileWrapperBottom
+{
+    display: flex;
+}
+.profileImages
+{
+    height: 320px;
+    position: relative;
+}
+.coverProfilePhoto
+{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    cursor: pointer;
+}
+@media only screen and (max-width: 480px)
+{
+    .profile
+    {
+        width: 100vw;
+    }
+    .profileImages 
+    {
+        height: 150px;
+    }
+    .coverProfilePhoto
+    {
+        height: 100px;
+    }
+    .profileImagePhoto 
+    {
+        height: 100px;
+        width: 100px;
+    }
+    .followerCount
+    {
+        margin-top: 10px;
+    }
+    .profileDetails
+    {
+        .profileDetailsName
+        {
+             font-size: 24px;
+        }
+    }
+    .followerCount{
+        div 
+        {
+            padding: 7px;
+        }
+    }
+}
+.profileImagePhoto
+{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: auto;
+    bottom: 0;
+    border: 4px solid #fff;
+    cursor: pointer;
+}
+.profileDetails
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.profileDetailsName
+{
+    font-size: 32px;
+}
+.profileDetailsBio
+{
+    font-size: 15px;
+    font-weight: 300;
+    margin-top: 10px;
+}

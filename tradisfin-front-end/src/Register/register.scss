@@ -1,0 +1,122 @@
+.registerPage
+{
+    width: 100vw;
+    height: 100vh;
+    background-color: #fafafa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.registerWrapper
+{
+    display: flex;
+    width: 70%;
+    height: 70%;
+}
+.registerLeft, .registerRight
+{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.registerLogo
+{
+    color: #2196f3;
+    font-size: 50px;
+    font-weight: bold;
+}
+.registerIntroduction
+{
+    font-size: 24px;
+}
+.registerRight
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 450px;
+    background-color: #fff;
+    padding: 20px;
+}
+.registerInput
+{
+    height: 50px;
+    padding-left: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin-top: 15px;
+    position: relative;
+    &:hover
+    {
+        border-color: black;
+    }
+    &:focus
+    {
+        outline: none;
+        border: 1px solid #2196f3;
+        box-shadow: 0px 0px 0px 2px rgba(33,150,243,0.75);
+        -webkit-box-shadow: 0px 0px 0px 2px rgba(33,150,243,0.75);
+        -moz-box-shadow: 0px 0px 0px 2px rgba(33,150,243,0.75); 
+    }
+    
+}
+
+.registerInput:focus
+{
+    outline: none;  
+}
+.registerButton
+{
+    height: 50px;
+    color: #fff;
+    font-size: 20px;
+    background-color: #2196f3;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+}
+.alreadyHaveAnAccountText
+{
+    color: #2196f3;
+    font-weight: 300;
+    cursor: pointer;
+}
+.signInButton
+{
+    color: #2196f3;
+    border: 1px solid #2196f3;
+    font-size: 20px;
+    height: 50px;
+    border-radius: 7px;
+    background-color: transparent;
+    cursor: pointer;
+}
+@media only screen and (max-width: 480px) {
+    .registerPage 
+{
+    .registerWrapper
+    {
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+
+        .registerLeft 
+        {
+            padding: 20px;
+        }
+    }
+    .registerButton 
+    {
+        margin-top: 15px;
+    }
+    .alreadyHaveAnAccountText 
+    {
+        margin: 5px 0 5px 0;
+    }
+    .signInButton 
+    {
+        margin-top: 10px;
+    }
+}
+}

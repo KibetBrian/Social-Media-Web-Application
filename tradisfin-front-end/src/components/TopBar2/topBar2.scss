@@ -1,0 +1,73 @@
+ .topBar2 
+ {
+     position: sticky;
+     top: 0;
+     left: 0;
+     background-color: #3E64FF;
+     height: 50px;
+     width: 100vw;
+     overflow: hidden; 
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     .topBar2Wrapper 
+     {
+         display: flex;
+         width: 100%;
+         align-items: center;
+         justify-content: space-evenly;
+         padding: 0 10px;
+         .logo
+         {
+             flex: 0.7;
+             font-size: 26px;
+             display: flex;
+             justify-content: start;
+             h4 
+             {
+                 font-size: 24px;
+             }
+         }
+         .inputContainer
+         {
+             flex: 6;
+             background-color: #fff;
+             border-radius: 15px;
+             display: flex;
+             align-items: center;
+             justify-content: center;
+             overflow: hidden;
+             input 
+             {
+                 flex: 5;
+                 border: none;
+                 border-radius: 15%;
+                 padding-left: 10px;
+                 height: 100%;
+                 &:focus
+                 {
+                     outline: none;
+                 }
+             }     
+             .search 
+             {
+                 flex: 1;
+                 color: #77ACF1;
+             }        
+         }
+         .messageContainer
+         {
+             flex: 1;
+             color: #fff;
+             display: flex;
+             align-items: center;
+             justify-content: center;
+
+             .chatIcon 
+             {
+                 font-size: 24px; 
+              }
+
+        }
+     }
+ }

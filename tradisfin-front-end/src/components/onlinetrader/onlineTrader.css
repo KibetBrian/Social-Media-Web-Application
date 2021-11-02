@@ -1,0 +1,33 @@
+.onlineTrader
+{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding-top: 20px;
+}
+.onlineTraderImageAndBatch
+{
+    position: relative;
+}
+.onlineTraderImage
+{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.onlineTraderName
+{
+    margin-left: 10px;
+    font-size: 17px;
+}
+.onlineBatch
+{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #00e676;
+    position: absolute;
+    right: 0;
+    top: 0;
+}

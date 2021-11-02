@@ -1,0 +1,45 @@
+.chatsComp
+{
+    .chatsCompWrapper
+    {
+        .top 
+        {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            color: #616161;
+        }
+        .bottom
+        {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+
+            button 
+            {
+                height: 40px;
+                background-color: #3d5afe;
+                border: none;
+                border-radius: 15px;
+                color: #fff;
+                margin-right: 10px;
+                cursor: pointer;
+                &:active
+                {
+                    outline: none;
+                }
+
+                &:last-child
+                {
+                    background-color: #eeeeee;
+                    color: #000;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 70px;
+                }
+            }
+        }
+    }
+}

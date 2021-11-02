@@ -1,0 +1,95 @@
+.leftBar
+{
+    flex: 3;
+    height: calc(100vh - 60px);
+    overflow-y: scroll;
+    position: sticky;
+    top: 60px;
+}
+::-webkit-scrollbar
+{
+    width: 4px;
+}
+::-webkit-scrollbar-track
+{
+    background-color: #F3F1F5;
+}
+::-webkit-scrollbar-thumb
+{
+   background-color: #AAAAAA;
+}
+.sideBarWrapper
+{
+    padding-left: 20px;
+}
+.sideBarList 
+{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.sideBarListItem 
+{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    cursor: pointer;
+    padding: 10px;
+}
+.sideBarListItem:hover
+{
+  background-color: #F3F1F5;
+}
+.sideBarListItemIcon
+{
+    margin-right: 20px;
+    color: #77ACF1;
+}
+.sideBarHr
+{
+    margin: 20px 0;
+}
+.tradersYouFollow
+{
+    font-size: 24px;
+    color: #77ACF1;
+}
+.sideBarFriendsList
+{
+   list-style: none;
+   padding: 0;
+   margin: 0;
+}
+.sideBarFriendsListItem
+{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.sideBarFriendsProfile
+{
+    margin-right: 10px;
+}
+
+.sideBarFriendsProfile
+{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.showMoreButtonContainer
+{
+    display: flex;
+    justify-content: center;
+}
+.showMoreFriendsButton
+{
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    color: #77ACF1;
+    margin-top: 10px;
+}

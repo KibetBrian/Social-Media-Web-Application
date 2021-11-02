@@ -1,0 +1,21 @@
+
+.trendingNewsTitle:hover
+{
+    color: #77ACF1;
+}
+.trendingNews
+{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    cursor: pointer;
+}
+.trendingNewsImage
+{
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+    border-radius: 3px;
+    margin-left: 3px;
+    object-fit: cover;
+}

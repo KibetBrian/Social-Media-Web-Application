@@ -1,0 +1,32 @@
+.conversation
+{
+    padding-top: 20px   ;
+}
+.conversationWrapper
+{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.conversationWrapper:hover
+{
+    background-color: #fafafa;
+}
+.conversationWrapper:hover .conversationUserName
+{
+    color: #00e676;
+}
+.conversationImage
+{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.conversationUserName
+{
+    margin-left: 20px;
+    font-size: 17px;
+}
