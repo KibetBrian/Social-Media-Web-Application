@@ -8,6 +8,11 @@ services:
       - social
   backend:
     build: ./backend
+    depends_on:
+      - mongo-db
+    environment:
+      - MONGODB_URI=mongodb://mongodb:27017/social
+      - PORT=8080
     ports:
       - "8080:8080"
     networks:
@@ -23,7 +28,7 @@ services:
     networks:
       - social
   redis:
-    image: redis:7.0.7-alpine
+    image: redis
     ports:
       - "6379:6379"
     networks:
