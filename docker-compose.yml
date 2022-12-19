@@ -1,0 +1,32 @@
+version: "3.9" 
+services:
+  front-end:
+    build: ./frontend
+    ports:
+      - "3000:3000"
+    networks:
+      - social
+  backend:
+    build: ./backend
+    ports:
+      - "8080:8080"
+    networks:
+      - social
+  socker-server:
+    build: ./socket-server
+    ports:
+      - "5500:5500"
+    networks:
+      - social
+  mongo-db:
+    image: mongo
+    networks:
+      - social
+  redis:
+    image: redis:7.0.7-alpine
+    ports:
+      - "6379:6379"
+    networks:
+      - social
+networks:
+  social:
