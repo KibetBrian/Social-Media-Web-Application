@@ -2,6 +2,7 @@ const router = require('express').Router();
 const User = require('../models/user');
 const mongoose = require('mongoose');
 const bcrypt = require('bcrypt');
+const jwt = require('jsonwebtoken');
 
 router.post('/register', async (req, res) => {
     if (!(req.body.password && req.body.email && req.body.userName)) {
@@ -57,11 +58,18 @@ router.post('/login', async (req, res) => {
             return res.status(404).json("Invalid email or password");
         }
 
-        const { password, ...others } = user;
+        const { password, ...otherProperties } = user;
+
+        const userData = otherProperties._doc;
+
+        const token = jwt.sign({ userId: userData._id }, process.env.JWT_SECRET_KEY, { expiresIn: '15m' });
 
         return res.status(200).json({
             message: "Login Successfull",
-            user: user
+            userData: {
+                user,
+                token
+            }
         });
 
     } catch (err) {
